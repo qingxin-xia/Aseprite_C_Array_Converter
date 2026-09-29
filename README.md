@@ -10,7 +10,7 @@ Lua script to convert Aseprite animations with an indexed color palette into a C
 * Each frame is stored as a continuous 1D array to allow for data streaming in embedded systems
 * To save space, each pixel is represented as the index corresponding to the palette and stored in uint8_t (8 bit) 
   * This format is compatible with palette sizes <= 255
-  * During runtime, the pixel color is referenced by palette\[frame\]\[row * rowLen + col\]
+  * During runtime, the pixel color is referenced by palette\[animation\[frame\]\[row * rowLen + col\]\]
 
 ## How to Use:
 
