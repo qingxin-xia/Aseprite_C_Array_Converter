@@ -3,7 +3,7 @@ Lua script to convert Aseprite animations with an indexed color palette into a C
 
 ## Array Format & Use Cases:
 
-* Both .c and .h files are created in the same folder as the Aseprite Animation
+* Both .c and .h files are created in the same folder as the Aseprite animation
 * Palette is converted into RGB565 values (16 bit) for compatibility in libraries like Adafruit GFX
 * The main pixel data of the animation is 2D: \[FrameNum\]\[FrameHeight * FrameWidth\]
 * Each frame is stored as a continuous 1D array to allow for data streaming in embedded systems
